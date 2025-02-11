@@ -1,38 +1,32 @@
 # Epoch-Time-Conversion-difference
-Date Time Difference Calculator
-A C program that calculates the precise time difference between two user-input dates. The program converts dates to epoch time and displays the difference in multiple formats including days, hours, minutes, and seconds.
-It can be usefull for daily-life problem solving, for example:
-* Time Tracking for Work or Study Sessions
-* Age Calculation
-## 🚀 Features
+Tarih Zaman Farkı Hesaplayıcı Kullanıcı tarafından girilen iki tarih arasındaki kesin zaman farkını hesaplayan bir C programı. Program, tarihleri çağ saatine dönüştürür ve farkı gün, saat, dakika ve saniye dahil olmak üzere birden çok formatta görüntüler. Örneğin günlük hayattaki problemleri çözmek için kullanışlı olabilir: 
+* İş veya Çalışma Oturumları için Zaman Takibi
+* Yaş Hesaplama
+## 🚀 Özellikler
 
-Calculate time difference between any two dates after 1970 (Unix epoch)
-Input validation for date and time components
-Display results in both local time and epoch time formats
-Break down time differences into days, hours, minutes, and seconds
-Error handling for invalid date inputs
+1970'ten sonraki herhangi iki tarih arasındaki zaman farkını hesaplama (Unix dönemi) Tarih ve saat bileşenleri için giriş doğrulama Sonuçları hem yerel saat hem de dönem saati formatlarında görüntüleme Zaman farklarını günlere, saatlere, dakikalara ve saniyelere ayırma Geçersiz tarih girişleri için hata işleme
 
-## 🚀 Requirements
+## 🚀 Gereksinimler
 
-* C compiler (GCC recommended)
-* Standard C libraries:
+* C derleyicisi (GCC önerilir)
+* Standart C kütüphaneleri:
   * `stdio.h`
   * `stdlib.h`
   * `time.h`
-## 🚀 Program Structure
+## 🚀 Program Yapısı
 
-* `struct`: Stores date and time components
-* `union`: Provides flexibility to store either DateTime or epoch time
-* `mktime()`: Converts DateTime to epoch time
-* `difftime()`: calculates the difference between the two dates
-* `main()`: Handles user input and program flow
+* `struct`: Tarih ve saat bileşenlerini saklar
+* `union`: DateTime veya epoch zamanını saklamak için esneklik sağlar
+* `mktime()`: DateTime'ı epoch zamanına dönüştürür
+* `difftime()`: iki tarih arasındaki farkı hesaplar
+* `main()`: Kullanıcı girdisini ve program akışını yönetir
 
-## 🚀 Error Handling
-* The program includes basic error handling:
-  * Validates input ranges for date/time components
-  * Checks for conversion errors when converting to epoch time
-  * Returns appropriate error messages for invalid inputs
-## 🚀 Limitations
-* Only handles dates from January 1, 1970 onwards (Unix epoch limitation)
-* Does not handle timezone conversions
-* Basic input validation (does not check for invalid dates like February 30th)
+## 🚀 Hata İşleme
+* Program temel hata işlemeyi içerir:
+  * Tarih/saat bileşenleri için giriş aralıklarını doğrular
+  * Epoch zamana dönüştürürken dönüştürme hatalarını kontrol eder
+  * Geçersiz girişler için uygun hata mesajlarını döndürür
+## 🚀 Sınırlamalar
+* Yalnızca 1 Ocak 1970'ten sonraki tarihleri işler (Unix dönem sınırlaması)
+* Zaman dilimi dönüşümlerini işlemez
+* Temel giriş doğrulaması (30 Şubat gibi geçersiz tarihleri kontrol etmez)
